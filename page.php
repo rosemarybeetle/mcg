@@ -4,27 +4,28 @@
 if ( !defined('ABSPATH')) exit;
 
 /**
- * Pages Template
+ * Full Content Template
  *
+   Template Name:  Full Width Page (no sidebar)
  *
- * @file           page.php
+ * @file           full-width-page.php
  * @package        Responsive 
  * @author         Emil Uzelac 
- * @copyright      2003 - 2012 ThemeID
+ * @copyright      2003 - 2011 ThemeID
  * @license        license.txt
  * @version        Release: 1.0
- * @filesource     wp-content/themes/responsive/page.php
+ * @filesource     wp-content/themes/responsive/full-width-page.php
  * @link           http://codex.wordpress.org/Theme_Development#Pages_.28page.php.29
  * @since          available since Release 1.0
  */
 ?>
 <?php get_header(); ?>
 
-        <div id="content" class="grid col-620">
+        <div id="content-full" class="grid col-940">
         
 <?php if (have_posts()) : ?>
 
-  	<?php while (have_posts()) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
         
         <?php $options = get_option('responsive_theme_options'); ?>
 		<?php if ($options['breadcrumb'] == 0): ?>
@@ -82,7 +83,6 @@ if ( !defined('ABSPATH')) exit;
 
 <?php endif; ?>  
       
-        </div><!-- end of #content -->
+        </div><!-- end of #content-full -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
