@@ -20,7 +20,6 @@ if ( !defined('ABSPATH')) exit;
 
 get_header(); ?>
 
-<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 
 <div id="content" class="<?php echo implode( ' ', responsive_get_content_classes() ); ?>">
 
