@@ -47,7 +47,7 @@ if ( !defined('ABSPATH')) exit;
     <?php responsive_header(); // before header hook ?>
     <div id="header">
 
-  	<?php responsive_header_top(); // before header content hook ?>
+		<?php responsive_header_top(); // before header content hook ?>
     
         <?php if (has_nav_menu('top-menu', 'responsive')) { ?>
 	        <?php wp_nav_menu(array(
@@ -68,6 +68,9 @@ if ( !defined('ABSPATH')) exit;
         </div><!-- end of #logo -->
         
     <?php endif; // header image was removed ?>
+<div id="search-box">
+            <?php get_search_form(); ?>
+        </div><!-- end of #search-box -->
 
     <?php if ( !get_header_image() ) : ?>
                 
