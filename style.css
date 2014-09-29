@@ -36,8 +36,8 @@ body {
 	color: #00394F;
 	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-size: 14px;
-	margin: 10px 15px 15px 15px;
-	padding: 0;
+	margin: 10px 0px 15px 0px;
+	//padding: 0px -52px 0px -5px;
 }
 
 p {
@@ -115,7 +115,7 @@ form {
 	padding: 0;
 width:190px;
 position: absolute;
-right:40px;
+right:52px;
 top:-35px;
 	//line-height: 28px;
 }
@@ -147,7 +147,7 @@ top:-35px;
 	//color: #197C92;
 	font-weight: bold;
 position: absolute;
-right:-40px;
+right:-53px;
 top:0px;
 
 }
